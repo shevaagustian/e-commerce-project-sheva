@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheva Dimsum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="WhatsApp Image 2025-06-04 at 08.40.10.jpeg" width="100" height="500" alt="Logo Sheva Dimsum" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#menu">Produk</a></li>
+                <li><a href="#">Keranjang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="produk" id="menu">
+            <h2>Produk Terbaru</h2>
+            <div class="produk-list">
+                <div class="produk-item">
+                    <img src="dimsum mentai.jpeg" alt="Dimsum Ayam">
+                    <h3>Dimsum Ayam</h3>
+                    <p>Dibuat dari ayam pilihan, lembut dan gurih dipadukan dengan mentai.</p>
+                    <p class="harga">Rp 45.000</p>
+                    <button class="beli-btn">Beli</button>
+                </div>
+                <div class="produk-item">
+                    <img src="udang.jpeg" alt="Dimsum Udang">
+                    <h3>Dimsum Udang</h3>
+                    <p>Isi udang segar, nikmat di setiap gigitan.</p>
+                    <p class="harga">Rp 38.000</p>
+                   <button class="beli-btn">Beli</button>
+                </div>
+                <div class="produk-item">
+                    <img src="dimsum ayam.jpg" alt="Dimsum Spesial">
+                    <h3>Dimsum Spesial</h3>
+                    <p>Kombinasi daging ayam dan udang yang istimewa.</p>
+                    <p class="harga">Rp 50.000</p>
+                    <button class="beli-btn">Beli</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <div class="footer-section">
+                    <h2>Tentang Sheva Dimsum</h2>
+                    <p>Sheva Dimsum adalah brand kuliner rumahan yang menghadirkan dimsum berkualitas premium dengan cita rasa khas nusantara. Didirikan pada tahun 2022 di Cimanggung, kami berkomitmen menyajikan produk yang higienis, lezat, dan terjangkau untuk semua kalangan.</p>
+                </div>
+                <div class="footer-section" id="contact">
+                    <h2>Hubungi Kami</h2>
+                    <p>Phone: 0859-3927-885</p>
+                    <p>Email: sheva.dimsummaknyus@example.com</p>
+                    <a href="#">Privacy Policy</a><br>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+
+            <div class="newsletter-signup">
+                <h3>Subscribe to our newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="social-media">
+                <a href="#"><img src="WhatsApp Image 2025-06-04 at 10.42.39.jpeg" alt="Twitter"></a>
+                <a href="#"><img src="WhatsApp Image 2025-06-04 at 10.38.17.jpeg" alt="Facebook"></a>
+                <a href="#"><img src="ig.jpeg" alt="Instagram"></a>
+            </div>
+
+            <div class="payment-methods">
+                <img src="visa.png" alt="Visa">
+                <img src="master card.png" alt="MasterCard">
+                <img src="paypal.jpg" alt="PayPal">
+            </div>
+
+            <p class="copyright">
+                &copy; 2025 Sheva Dimsum. All rights reserved.
+            </p>
+        </div>
+    </footer>
+<script>
+        // Tambahkan interaksi tombol beli
+        const beliButtons = document.querySelectorAll('.beli-btn');
+        beliButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const namaProduk = button.previousElementSibling.previousElementSibling.previousElementSibling.textContent;
+                alert("Anda membeli " + namaProduk + ". Terima kasih!");
+            });
+        });
+         // Event listener untuk menu navigasi
+         document.querySelector('a[href="#contact"]').addEventListener('click', (e) => {
+        e.preventDefault(); // mencegah behavior default
+        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    });
+    document.querySelector('a[href="#"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        scrollToSection('#beranda');
+    });
+    document.querySelector('a[href="#produk"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        scrollToSection('#produk');
+    });
+    document.querySelectorAll('a[href="#"]')[1].addEventListener('click', function(e) {
+        e.preventDefault();
+        scrollToSection('#keranjang');
+    });
+    </script>
+   
+
+</body>
+</html>

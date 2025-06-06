@@ -1,0 +1,149 @@
+ body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(251, 121, 210);
+}
+
+
+header {
+    background-color: #fdfbf7;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: o 2px 5px rgba(0,0,0,0,1);
+}
+.logo {
+    height: 150px;
+    width: 200px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #b33939;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li {
+        margin: 0 15px;
+}
+main {
+    padding: 20px;
+}
+h2{color: #b33939;}
+
+
+/*produk section*/
+.produk {
+    text-align: center;
+}
+
+.produk-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.produk-item {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 15px;
+    width: 250px;
+    border-radius: px;
+    transition: 0 2px 5px rgba(0,0,0,0,1);
+    text-align: center;
+}
+
+.produk-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.produk-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.harga {
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.beli-btn {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.beli-btn:hover {
+    background-color: #c2185b;
+}
+
+
+footer {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.newsletter-signup input[type="email"] {
+    padding: 8px;
+    width: 200px;
+}
+
+.newsletter-signup button {
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    gap: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.payment-methods img {
+    width: 50px;
+    margin: 0 10px;
+}
