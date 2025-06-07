@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheva Dimsum</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="script.js" href="script.js">
 </head>
 <body>
     <header>
@@ -30,6 +31,8 @@
                     <p class="harga">Rp 45.000</p>
                     <button class="beli-btn">Beli</button>
                 </div>
+                <main id="beranda">
+                </main>
                 <div class="produk-item">
                     <img src="udang.jpeg" alt="Dimsum Udang">
                     <h3>Dimsum Udang</h3>
@@ -58,8 +61,9 @@
                 <div class="footer-section" id="contact">
                     <h2>Hubungi Kami</h2>
                     <p>Phone: 0859-3927-885</p>
-                    <p>dsn.bunisari Rt.03/Rw01 ds. cimanggung,kec. cimanggung, kab. sumedang</p>
                     <p>Email: sheva.dimsummaknyus@example.com</p>
+                    <a href="#">Privacy Policy</a><br>
+                    <a href="#">Terms & Conditions</a>
                 </div>
             </div>
 
@@ -88,34 +92,7 @@
             </p>
         </div>
     </footer>
-<script>
-        // Tambahkan interaksi tombol beli
-        const beliButtons = document.querySelectorAll('.beli-btn');
-        beliButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const namaProduk = button.previousElementSibling.previousElementSibling.previousElementSibling.textContent;
-                alert("Anda membeli " + namaProduk + ". Terima kasih!");
-            });
-        });
-         // Event listener untuk menu navigasi
-         document.querySelector('a[href="#contact"]').addEventListener('click', (e) => {
-        e.preventDefault(); // mencegah behavior default
-        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
-    });
-    document.querySelector('a[href="#"]').addEventListener('click', function(e) {
-        e.preventDefault();
-        scrollToSection('#beranda');
-    });
-    document.querySelector('a[href="#produk"]').addEventListener('click', function(e) {
-        e.preventDefault();
-        scrollToSection('#produk');
-    });
-    document.querySelectorAll('a[href="#"]')[1].addEventListener('click', function(e) {
-        e.preventDefault();
-        scrollToSection('#keranjang');
-    });
-    </script>
-   
-
 </body>
 </html>
+
+   
